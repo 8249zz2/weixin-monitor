@@ -1,0 +1,10 @@
+/* pages/show/show.wxss */
+image{
+  width : 375px;
+  height: 600px;
+ 
+}
+swiper{
+  width:375px;
+  height:600px;
+}
