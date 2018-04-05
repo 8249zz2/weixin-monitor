@@ -1,10 +1,24 @@
 /* pages/show/show.wxss */
 image{
-  width : 375px;
-  height: 600px;
+  width : 100%;
+  height: 100%;
  
 }
 swiper{
   width:375px;
   height:600px;
+}
+button{
+  position:fixed;
+  top:75%;
+  left: 35%;
+
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 900 ;
+}
+
+.clickExperience{
+  opacity:0.6;
 }

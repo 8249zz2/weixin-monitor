@@ -1,17 +1,14 @@
 <!--pages/show/show.wxml-->
 <!--<text>pages/show/show.wxml></text>-->
-<swiper indicator-dots="{{indicatorDots}}"
-   autoplay="{{autoplay}}">
-   <block wx:for="{{imgUrls}}">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+   <block wx:for="{{imgUrls}}" wx:for-item='i'>
     <swiper-item>
-     // <image src="{{item}}" class="slide-image" />
+      <block wx:if='{{i == "../../images/3.png"}}' class='btnExperience'>
+        <button bindtap='btnExperience' class='clickExperience'>点击体验</button>
+      </block>
+      <image src="{{i}}" class="slide-image" />
     </swiper-item>
-   </block>
-   <text>点击跳转</text>
+
+  </block>
 </swiper>
-<!--
-<button bindtap="changeIndicatorDots"> indicator-dots </button>
-<button bindtap="changeAutoplay"> autoplay </button>
-<slider bindchange="intervalChange" show-value min="500" max="2000"/> interval 
-<slider bindchange="durationChange" show-value min="1000" max="10000"/> duration
--->
+
