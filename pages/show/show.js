@@ -6,16 +6,18 @@ Page({
   		'../../images/2.png',
   		'../../images/3.png'
   	],
-  	indicatorDots:false,
+  	indicatorDots:true,
   	autoplay:false,
    },
   btnExperience:function(){
-    wx.redirectTo({
+    wx.switchTab({
       url: '../index/index',
       success: function(res) {
-        console.log("redirectTo success!")
+        console.log("switchTab success!");
       },
-
+      fail: function(res) {
+        console.log("switchTab failed!");
+      }
     })
   } 
 

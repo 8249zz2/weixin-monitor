@@ -1,0 +1,8 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+  <view>个人信息</view>
+  <view>显示头像</view>
+  <view>监控的网站地址</view>
+  
+</view>
+
