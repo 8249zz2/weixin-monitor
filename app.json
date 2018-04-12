@@ -1,13 +1,12 @@
 {
   "pages":[
-    "pages/show/show",
     "pages/index/index",
-    "pages/logs/logs",
     "pages/webinfo/webinfo",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/show/show",
+    "pages/logs/logs"
   ],
   "window":{
-    
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Monitor",
@@ -15,20 +14,25 @@
 
     },
     "tabBar": {
-      "selectedColor": "#11cd6e",
+      "selectedColor": "black",
       "list": [
         {
           "pagePath": "pages/index/index",
-          "text": "首页"
+          "text": "首页",
+          "iconPath":"./images/shouye.png",
+          "selectedIconPath": "./images/shouye_selected.png"
         },
         {
           "pagePath":"pages/webinfo/webinfo",
-          "text":"网站信息"
+          "text":"网站信息",
+          "iconPath": "./images/webInfo.png",
+          "selectedIconPath": "./images/webInfo_selected.png"
         },
         {
           "pagePath": "pages/mine/mine",
-          "text": "个人中心"
-          
+          "text": "个人中心",
+          "iconPath": "./images/user.png",
+          "selectedIconPath": "./images/user_selected.png"
         }
       ]
     },

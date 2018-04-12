@@ -1,2 +1,7 @@
 <!--pages/webinfo/webinfo.wxml-->
-<text>pages/webinfo/webinfo.wxml</text>
+<view class='container'>
+
+  <view>显示最近一天的内容</view>
+  <view>显示的参数参考首页的</view>
+</view>
+

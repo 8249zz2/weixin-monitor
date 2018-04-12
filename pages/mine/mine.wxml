@@ -3,6 +3,7 @@
   <view>个人信息</view>
   <view>显示头像</view>
   <view>监控的网站地址</view>
+  <view>提供跳转Button去修改网址信息</view>
   
 </view>
 

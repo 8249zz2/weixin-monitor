@@ -3,7 +3,7 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
    <block wx:for="{{imgUrls}}" wx:for-item='i'>
     <swiper-item>
-      <block wx:if='{{i == "../../images/1.png"}}' class='btnExperience'>
+      <block wx:if='{{i == "../../images/3.png"}}' class='btnExperience'>
         <button bindtap='btnExperience' class='clickExperience'>点击进入</button>
       </block>
       <image src="{{i}}" class="slide-image" />
