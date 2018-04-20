@@ -1,36 +1,38 @@
 //index.js
 //获取应用实例
-const app = getApp()
+var indexApp = getApp();
 
 Page({
   data: {
     userInfo: {},
-    cycle: null,
-    monitor_number:null,
-    img_number:null,
-    href_number:null,
-    href_changed:null,
-    img_changed:null,
-    content_changed:null
+    hadGetRequest:false,
+    cycle: 0,
+    monitor_number:0,
+    img_number:0,
+    href_number:0,
+    href_changed:0,
+    img_changed:0,
+    content_changed:0
   },
   onLoad: function () {
-    var that = this;
-    
-    wx.request({
-      url: 'http://localhost:8080/?username=xt12321',
-      header: {
-        'content-type':'application/json'
-      },
-      success: function (res){
-        that.setData({
-        cycle : res.data[0].cycle,
-        href_number : res.data[0].href_number,
-        img_number  : res.data[0].img_number,
-        monitor_number : res.data[0].monitor_number,
-        })
+    wx.setNavigationBarTitle({
+      title: '首页'
+    });
+    wx.setNavigationBarColor({
+      frontColor: indexApp.globalData.frontColor,
+      backgroundColor: indexApp.globalData.NavigationBarColor,
+      animation: {
+        duration: 400,
+        timingFunc: 'easeIn'
       }
+    });
+    wx.setTabBarStyle({
+      color: '#000000',
+      selectedColor: '#FFFFFF',
+      backgroundColor: '#04BFBF',
+      borderStyle: 'white'
     })
-
-
+  
   }
+
 })

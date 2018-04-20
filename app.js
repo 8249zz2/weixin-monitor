@@ -28,12 +28,14 @@ App({
                 this.userInfoReadyCallback(res)
               }
             }
-          })
+          }) 
         }
       }
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    NavigationBarColor: '#04BFBF',
+    frontColor: '#ffffff'
   }
 })

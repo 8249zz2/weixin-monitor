@@ -1,9 +1,18 @@
 <!--pages/mine/mine.wxml-->
 <view class='container'>
+  <view class='userInfo'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>点击获取信息</button>
+    <block wx:if="{{hasUserInfo}}">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size='cover'></image>
+      <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  
   <view>个人信息</view>
-  <view>显示头像</view>
-  <view>监控的网站地址</view>
-  <view>提供跳转Button去修改网址信息</view>
+  <view>网址信息</view>
+  <view>使用说明</view>
+  <view>查看日志</view>
   
 </view>
 

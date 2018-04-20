@@ -1,4 +1,5 @@
 // pages/webinfo/webinfo.js
+var infoApp = getApp();
 Page({
 
   /**
@@ -12,7 +13,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    wx.setNavigationBarTitle({
+      title: '网站信息'
+    });
+    wx.setNavigationBarColor({
+      frontColor: infoApp.globalData.frontColor,
+      backgroundColor: infoApp.globalData.NavigationBarColor,
+      animation: {
+        duration: 400,
+        timingFunc: 'easeIn'
+      }
+    });
   },
 
   /**

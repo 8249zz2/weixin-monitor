@@ -1,5 +1,7 @@
 {
   "pages":[
+    
+    
     "pages/index/index",
     "pages/webinfo/webinfo",
     "pages/mine/mine",
